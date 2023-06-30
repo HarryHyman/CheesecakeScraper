@@ -5,6 +5,6 @@ site = requests.get("https://www.janespatisserie.com/2019/05/30/no-bake-lemon-ch
 
 soup = BeautifulSoup(html_content, "html.parser")
 
-recipe = soup.find(class="wprm-recipe")
+recipe = soup.find(class_="wprm-recipe")
 
 print(recipe)
