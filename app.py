@@ -7,4 +7,6 @@ soup = BeautifulSoup(site, "html.parser")
 
 recipe = soup.find(class_="wprm-recipe")
 
-print(recipe)
+recipe_text = recipe.get_text(separator="")
+
+print(recipe_text)
