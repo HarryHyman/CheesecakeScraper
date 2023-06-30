@@ -9,10 +9,10 @@ soup = BeautifulSoup(site, "html.parser")
 # recipe_text = recipe.get_text(separator="")
 
 ingredients = soup.find(class_="wprm-recipe-ingredients-container")
-ingredients_text = ingredients.get_text(separator="")
+ingredients_text = ingredients.get_text(separator="\n")
 
 instructions = soup.find(class_="wprm-recipe-instructions-container")
-instructions_text = instructions.get_text(separator="")
+instructions_text = instructions.get_text(separator="\n")
 
 notes = soup.find(class_="wprm-recipe-notes-container")
 notes_text = notes.get_text(separator="")
