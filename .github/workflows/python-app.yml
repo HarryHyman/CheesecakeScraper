@@ -14,5 +14,5 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Hello World
-      run: python $GITHUB_WORKSPACE/hello_world.py
+      run: python $GITHUB_WORKSPACE/app.py
       shell: sh
